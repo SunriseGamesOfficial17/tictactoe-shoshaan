@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initBody()">
+
+
+    <div class="row">
+
+        <div class="left">
+            <div class="icon" id="turnicon"></div>
+            <div class="message" id="turnmsg">Player 1's Turn</div>
+            <br>
+            <div class="player">
+                <span>Player1 :</span>
+                <Span id="p1score">0</Span>
+            </div>
+            <div class="player">
+                <span>Player2 :</span>
+                <Span id="p2score">0</Span>
+            </div>
+            <br><br>
+            <div class="errorbox" id="errorbox"></div>
+        </div>
+
+        <div class="main">
+
+            <centre>
+                <!--<div class="title">
+                    Tic Tac Toe
+                </div>-->
+                <br>
+
+                <table class="mainTable">
+
+                    <tr class="tr-border">
+                        <td onclick="displayIcon(1)" id="td1" class="td-right-border">
+
+                            <span><img src="" id="img1" /></span>
+                        </td>
+                        <td onclick="displayIcon(2)" id="td2" class="td-right-border">
+                            <span><img src="" id="img2" /></span>
+
+                        </td>
+                        <td onclick="displayIcon(3)" id="td3">
+
+                            <span><img src="" id="img3" /></span>
+
+                        </td>
+
+                    </tr>
+                    <tr class="tr-border">
+                        <td onclick="displayIcon(4)" id="td4" class="td-right-border">
+
+                            <span><img src="" id="img4" /></span>
+
+                        </td>
+                        <td onclick="displayIcon(5)" id="td5" class="td-right-border">
+
+                            <span><img src="" id="img5" /></span>
+
+                        </td>
+                        <td onclick="displayIcon(6)" id="td6">
+
+                            <span><img src="" id="img6" /></span>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td onclick="displayIcon(7)" id="td7" class="td-right-border">
+
+                            <span><img src="" id="img7" /></span>
+
+                        </td>
+                        <td onclick="displayIcon(8)" id="td8" class="td-right-border">
+
+                            <span><img src="" id="img8" /></span>
+
+                        </td>
+                        <td onclick="displayIcon(9)" id="td9">
+
+                            <span><img src="" id="img9" /></span>
+
+                        </td>
+
+                    </tr>
+                </table>
+            </centre>
+
+        </div>
+        <div class="right">
+            <div class="icon_right"></div>
+            <div class="notification">welcome to <br>tic tac toe</div>
+            <div class="gameOver" id="feedbackmsg">Let's Start</div>
+            <br>
+            <div class="resetbtn" onclick="reset()">RESET</div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
